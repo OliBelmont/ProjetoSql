@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #00b386;
+  margin-bottom: 16px;
+}
+
+input, select, textarea {
+  margin-top: 8px;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 1px solid #00b386;
+  box-shadow: 0 0 0 2px rgba(0, 179, 134, 0.2);
+  outline: none;
+}
+
+
+input:focus, select:focus, textarea:focus {
+  border-color: #00b386;
+  outline: none;
+}
+
+button {
+  background-color: #00b386;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #009973;
+}
+
+textarea {
+  resize: vertical;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  background-color: #fff;
+}
+
+.comando-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.comando-item:hover {
+  background-color: #e0f7f2;
+}
+
+.comando-item strong {
+  color: #00b386;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.comando-item code {
+  display: block;
+  white-space: pre-wrap;
+  margin-top: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 3px solid #00b386;
+}
+#limparBtn {
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  #limparBtn:hover {
+    background-color: #d0d0d0;
+  }
+  input.erro, select.erro {
+    border: 2px solid #e74c3c;
+    background-color: #ffe5e5;
+  }

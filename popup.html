@@ -2,52 +2,29 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Correções SQL</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      width: 600px;
-      height: 600px;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    input, select, button, textarea {
-      display: block;
-      margin: 10px 0;
-      width: 100%;
-      padding: 6px;
-      font-size: 14px;
-    }
-    textarea {
-      height: 100px;
-    }
-    .comando-item {
-      border: 1px solid #ccc;
-      padding: 6px;
-      margin: 5px 0;
-      cursor: pointer;
-    }
-    .comando-item:hover {
-      background-color: #f0f0f0;
-    }
-  </style>
+  <title>Gerador de SQL</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h3>Buscar Correção SQL</h3>
-  <input type="text" id="erroInput" placeholder="Descreva o erro...">
+  <h3>Buscar SQL por erro</h3>
+
+  <input type="text" id="erroInput" placeholder="Digite palavras-chave (ex: liberar número)">
+
   <select id="filtroSetor">
-    <option value="">Todos os Setores</option>
+    <option value="">Todos os setores</option>
     <option value="Estoque">Estoque</option>
     <option value="Financeiro">Financeiro</option>
     <option value="Workspace">Workspace</option>
     <option value="Integradores">Integradores</option>
     <option value="CRM">CRM</option>
   </select>
+
   <button id="buscarBtn">Buscar</button>
+  <button id="limparBtn" style="background-color: #ccc; color: #333;">Limpar Filtros</button>
 
   <div id="formulario"></div>
 
-  <textarea id="resultado" readonly></textarea>
+  <textarea id="resultado" rows="6" placeholder="Resultado..." readonly></textarea>
   <button id="copiarBtn">Copiar SQL</button>
 
   <script src="popup.js"></script>
