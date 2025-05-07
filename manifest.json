@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "SQL Helper",
+  "version": "1.0",
+  "description": "Busca e gera comandos SQL com base em palavras-chave.",
+  "permissions": [],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_title": "SQL Helper",
+    "default_width": 500,
+    "default_height": 600
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
